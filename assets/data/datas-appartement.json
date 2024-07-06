@@ -1,0 +1,36 @@
+[
+  {
+    "cover_image_url": "https://images.pexels.com/photos/19899084/pexels-photo-19899084/free-photo-of-empty-kitchen-interior-with-white-furniture.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "name": "Appartement moderne près du centre-ville",
+    "month_price": 1200,
+    "propriétaire": {
+      "image": "https://example.com/owner1.jpg",
+      "lastname": "Dupont",
+      "firstname": "Jean",
+      "tel": "+1234567890",
+      "email": "jean.dupont@example.com",
+      "totalOffers": 5,
+      "totalStars": 4
+    },
+    "location_adresse": "123 Rue des Roses",
+    "location_city": "Villeurbanne",
+    "description": "Appartement lumineux avec vue sur parc, entièrement rénové."
+  },
+  {
+    "cover_image_url": "https://images.pexels.com/photos/19899056/pexels-photo-19899056/free-photo-of-modern-interior-with-white-cupboards-and-black-chairs.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "name": "Maison avec jardin et piscine",
+    "month_price": 2500,
+    "propriétaire": {
+      "image": "https://example.com/owner2.jpg",
+      "lastname": "Smith",
+      "firstname": "Emma",
+      "tel": "+9876543210",
+      "email": "emma.smith@example.com",
+      "totalOffers": 8,
+      "totalStars": 5
+    },
+    "location_adresse": "456 Avenue des Lilas",
+    "location_city": "Paris",
+    "description": "Spacieuse maison familiale avec toutes commodités, idéale pour les vacances."
+  }
+]
