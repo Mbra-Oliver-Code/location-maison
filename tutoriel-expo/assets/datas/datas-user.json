@@ -1,0 +1,102 @@
+[
+  {
+    "id": "1",
+    "image": "https://example.com/owner1.jpg",
+    "lastname": "Dupont",
+    "firstname": "Jean",
+    "tel": "+1234567890",
+    "email": "jean.dupont@example.com",
+    "totalOffers": 5,
+    "totalStars": 4
+  },
+  {
+    "id": "2",
+    "image": "https://example.com/owner2.jpg",
+    "lastname": "Smith",
+    "firstname": "Alice",
+    "tel": "+1987654321",
+    "email": "alice.smith@example.com",
+    "totalOffers": 3,
+    "totalStars": 5
+  },
+  {
+    "id": "3",
+    "image": "https://example.com/owner3.jpg",
+    "lastname": "Garcia",
+    "firstname": "Maria",
+    "tel": "+1122334455",
+    "email": "maria.garcia@example.com",
+    "totalOffers": 7,
+    "totalStars": 4.5
+  },
+  {
+    "id": "4",
+    "image": "https://example.com/owner4.jpg",
+    "lastname": "Kowalski",
+    "firstname": "Jan",
+    "tel": "+4455667788",
+    "email": "jan.kowalski@example.com",
+    "totalOffers": 2,
+    "totalStars": 3.5
+  },
+  {
+    "id": "5",
+    "image": "https://example.com/owner5.jpg",
+    "lastname": "Brown",
+    "firstname": "Emma",
+    "tel": "+3344556677",
+    "email": "emma.brown@example.com",
+    "totalOffers": 4,
+    "totalStars": 4
+  },
+  {
+    "id": "6",
+    "image": "https://example.com/owner6.jpg",
+    "lastname": "Chen",
+    "firstname": "Wei",
+    "tel": "+9988776655",
+    "email": "wei.chen@example.com",
+    "totalOffers": 6,
+    "totalStars": 4.8
+  },
+  {
+    "id": "7",
+    "image": "https://example.com/owner7.jpg",
+    "lastname": "Lopez",
+    "firstname": "Carlos",
+    "tel": "+2233445566",
+    "email": "carlos.lopez@example.com",
+    "totalOffers": 3,
+    "totalStars": 3.7
+  },
+  {
+    "id": "8",
+    "image": "https://example.com/owner8.jpg",
+    "lastname": "Lee",
+    "firstname": "Ji-Hyun",
+    "tel": "+7788990011",
+    "email": "ji-hyun.lee@example.com",
+    "totalOffers": 8,
+    "totalStars": 4.9
+  },
+  {
+    "id": "9",
+    "image": "https://example.com/owner9.jpg",
+    "lastname": "Müller",
+    "firstname": "Hans",
+    "tel": "+1122334455",
+    "email": "hans.muller@example.com",
+    "totalOffers": 5,
+    "totalStars": 4.2
+  },
+  {
+    "id": "10",
+    "image": "https://example.com/owner10.jpg",
+    "lastname": "Nguyen",
+    "firstname": "Linh",
+    "tel": "+6655443322",
+    "email": "linh.nguyen@example.com",
+    "totalOffers": 4,
+    "totalStars": 3.9
+  }
+]

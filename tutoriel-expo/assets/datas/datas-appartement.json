@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "cover_image_url": "https://images.pexels.com/photos/19899084/pexels-photo-19899084/free-photo-of-empty-kitchen-interior-with-white-furniture.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "name": "Appartement moderne près du centre-ville",
+    "month_price": 1200,
+    "commodities": [
+      "2 douches",
+      "1 terrasse",
+      "1 niche pour chien",
+      "cage d'oiseaux",
+      "4 chambres",
+      "2 chambres amis"
+    ],
+    "propriétaire": {
+      "image": "https://example.com/owner1.jpg",
+      "lastname": "Dupont",
+      "firstname": "Jean",
+      "tel": "+1234567890",
+      "email": "jean.dupont@example.com",
+      "totalOffers": 5,
+      "totalStars": 4
+    },
+    "location_adresse": "123 Rue des Roses",
+    "location_city": "Villeurbanne",
+    "description": "Appartement lumineux avec vue sur parc, entièrement rénové.",
+    "longText": " universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo leggibile. Molti software di impaginazione e di web design utilizzano Lorem Ipsum come testo modello. Molte versioni del testo sono state prodotte negli anni, a volte casualmente, a volte di proposito (ad esempio inserendo passaggi ironici)."
+  },
+  {
+    "id": 2,
+    "cover_image_url": "https://images.pexels.com/photos/19899056/pexels-photo-19899056/free-photo-of-modern-interior-with-white-cupboards-and-black-chairs.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "name": "Maison avec jardin et piscine",
+    "month_price": 2500,
+    "commodities": [
+      "2 douches",
+      "1 terrasse",
+      "1 niche pour chien",
+      "cage d'oiseaux",
+      "4 chambres",
+      "2 chambres amis"
+    ],
+    "propriétaire": {
+      "image": "https://example.com/owner2.jpg",
+      "lastname": "Smith",
+      "firstname": "Emma",
+      "tel": "+9876543210",
+      "email": "emma.smith@example.com",
+      "totalOffers": 8,
+      "totalStars": 5
+    },
+    "location_adresse": "456 Avenue des Lilas",
+    "location_city": "Paris",
+    "description": "Spacieuse maison familiale avec toutes commodités, idéale pour les vacances.",
+    "longText": " universalmente riconosciuto che un lettore che osserva il layout di una pagina viene distratto dal contenuto testuale se questo è leggibile. Lo scopo dell’utilizzo del Lorem Ipsum è che offre una normale distribuzione delle lettere (al contrario di quanto avviene se si utilizzano brevi frasi ripetute, ad esempio “testo qui”), apparendo come un normale blocco di testo leggibile. Molti software di impaginazione e di web design utilizzano Lorem Ipsum come testo modello. Molte versioni del testo sono state prodotte negli anni, a volte casualmente, a volte di proposito (ad esempio inserendo passaggi ironici)."
+  }
+]
