@@ -18,6 +18,10 @@ const AppartmentItem = ({ item }) => {
     });
   };
 
+  // -replace : l'url actuel et il le remplacera par le nouveau
+  // -Push : ajoute la nouvelle url au dessus de l'ancienne
+  // -Navigate: conserve l'url precedente et va a l'Url demandé
+
   return (
     <TouchableOpacity style={styles.imageBlock} onPress={handleTouchImage}>
       <ImageBackground

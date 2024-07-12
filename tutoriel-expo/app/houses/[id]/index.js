@@ -2,22 +2,21 @@ import {
   View,
   SafeAreaView,
   ScrollView,
-  ImageBackground,
-  Text,
   StyleSheet,
+  Text,
+  ImageBackground,
   TouchableOpacity,
   Pressable,
 } from "react-native";
-import { router, useLocalSearchParams } from "expo-router";
-
 import houseList from "@/assets/datas/datas-appartement.json";
-import { AntDesign } from "@expo/vector-icons";
-import CommoditiesList from "@/components/UI/CommoditiesList";
+import { useLocalSearchParams, router } from "expo-router";
+import { AntDesign, EvilIcons, FontAwesome6 } from "@expo/vector-icons";
+
+import HouseCommodities from "@/components/UI/HouseCommoditie";
 
 const Page = () => {
   const { id } = useLocalSearchParams();
-
-  const house = houseList.find((item) => item.id === parseInt(id));
+  const house = houseList.find((houseItem) => houseItem.id === parseInt(id));
 
   if (!house) {
     return;
@@ -37,42 +36,43 @@ const Page = () => {
             uri: house.cover_image_url,
           }}
           resizeMode="cover"
-          style={styles.image}
+          style={[styles.mainImage, styles.p15]}
         >
-          <TouchableOpacity
-            style={styles.floatingButtonContainer}
-            onPress={goBack}
-          >
+          <TouchableOpacity style={styles.roundedButton} onPress={goBack}>
             <AntDesign name="arrowleft" size={24} color="white" />
           </TouchableOpacity>
         </ImageBackground>
 
         <View style={styles.p15}>
           <Text style={styles.houseName}>{house.name}</Text>
-          <Text style={{ marginTop: 10 }}>{house.location_city}</Text>
 
-          <View style={styles.moneyRow}>
-            <Text style={styles.money}>${house.month_price}</Text>
+          <View style={[styles.rowCenter, styles.mt10]}>
+            <EvilIcons name="location" size={24} color="black" />
+            <Text style={styles.houseLocation}>
+              {house.location_city} - {house.location_adresse}
+            </Text>
+          </View>
+
+          <View style={[styles.rowCenter, styles.mt20, styles.justifyBetween]}>
+            <Text style={styles.amount}>300$</Text>
 
             <View style={styles.tagContainer}>
-              <Text style={styles.tagNoteText}>5.0</Text>
-
-              <AntDesign name="star" size={20} color="#ff9e81" />
+              <Text style={styles.tagText}>5</Text>
+              <AntDesign name="star" size={20} color={"#ff9e81"} />
             </View>
           </View>
         </View>
 
-        <View style={{ marginVertical: 20 }}>
-          <CommoditiesList datas={house.commodities} />
+        <View style={styles.mt20}>
+          <HouseCommodities datas={house.commodities} />
         </View>
 
         <View style={styles.p15}>
-          <Text style={{ fontSize: 18, textAlign: "justify" }}>
-            {house.longText}
-          </Text>
+          <Text style={styles.description}>{house.longText}</Text>
 
           <Pressable style={styles.locationButton}>
-            <Text style={styles.buttonText}>Louer cette maison</Text>
+            <FontAwesome6 name="money-check" size={30} color="white" />
+            <Text style={styles.locationText}>Louer cette maison</Text>
           </Pressable>
         </View>
       </ScrollView>
@@ -85,19 +85,27 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  image: {
+  mainImage: {
     aspectRatio: 4 / 3,
-    padding: 15,
   },
 
-  floatingButtonContainer: {
+  roundedButton: {
     width: 50,
     height: 50,
     backgroundColor: "#4e5ac8",
     borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",
-    elevation: 3,
+  },
+  p15: {
+    padding: 15,
+  },
+  mt10: {
+    marginTop: 10,
+  },
+
+  mt20: {
+    marginTop: 20,
   },
 
   houseName: {
@@ -105,18 +113,20 @@ const styles = StyleSheet.create({
     fontWeight: "700",
   },
 
-  p15: {
-    padding: 15,
+  houseLocation: {
+    color: "gray",
   },
 
-  moneyRow: {
+  rowCenter: {
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
-    marginTop: 15,
   },
 
-  money: {
+  justifyBetween: {
+    justifyContent: "space-between",
+  },
+
+  amount: {
     fontSize: 30,
     fontWeight: "300",
   },
@@ -126,28 +136,37 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 5,
-    borderRadius: 5,
-    padding: 5,
+    paddingHorizontal: 15,
+    paddingVertical: 5,
+    borderRadius: 8,
   },
-  tagNoteText: {
-    color: "black",
+
+  tagText: {
     fontSize: 20,
+    color: "black",
+  },
+
+  description: {
+    fontSize: 16,
+    textAlign: "justify",
+    lineHeight: 20,
   },
 
   locationButton: {
     marginTop: 30,
-    marginBottom: 1,
+    marginBottom: 5,
     backgroundColor: "#4e5ac8",
     padding: 15,
-    borderRadius: 5,
+    flexDirection: "row",
+    justifyContent: "center",
     alignItems: "center",
-
-    elevation: 10,
+    gap: 15,
+    borderRadius: 5,
   },
-
-  buttonText: {
-    fontSize: 20,
+  locationText: {
     color: "white",
+    fontSize: 20,
   },
 });
+
 export default Page;
